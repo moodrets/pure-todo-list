@@ -330,6 +330,11 @@ class TodoList {
             )
             .join('');
 
+        html += `<button type="button" class="${this.settings.categoryItemClassName}" data-function="category-add">
+            <span>Добавить</span>
+            <span class="material-symbols-outlined">add</span>
+        </button>`;
+
         return html;
     }
 
@@ -383,10 +388,6 @@ class TodoList {
         this.container.innerHTML = `
             <div class="${this.settings.categoryContainerClassName}">
                 ${this.#renderCategoryList()}
-                <button type="button" class="${this.settings.categoryItemClassName}" data-function="category-add">
-                    <span>Добавить</span>
-                    <span class="material-symbols-outlined">add</span>
-                </button>
             </div>
             <div class="${this.settings.todoContainerClassName}">
                 ${this.#renderTodoList()}

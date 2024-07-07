@@ -27,7 +27,7 @@
     background-color: var(--color-neutral-light);
 }
 
-.tag-item[data-function='push-category'] {
+.tag-item[data-function='category-add'] {
     border-color: var(--color-dark);
     box-shadow: 0 0 0 1px var(--color-dark);
 }
