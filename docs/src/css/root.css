@@ -1,0 +1,21 @@
+:root {
+    --container-width: 768px;
+
+    --spacing-1: 2px;
+    --spacing-2: 4px;
+    --spacing-3: 8px;
+    --spacing-4: 12px;
+    --spacing-5: 16px;
+    --spacing-6: 20px;
+    --spacing-7: 24px;
+    --spacing-8: 32px;
+    --spacing-9: 48px;
+    --spacing-10: 64px;
+
+    --color-dark: #000;
+    --color-light: #fff;
+    --color-neutral: rgb(203 213 225);
+    --color-neutral-light: rgb(226 232 240);
+    --color-brand: rgb(34 211 238);
+    --color-secondary: rgb(139 92 246);
+}
