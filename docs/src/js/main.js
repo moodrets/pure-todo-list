@@ -80,7 +80,7 @@ class TodoList {
 
             this.categoryList.push({
                 id: Date.now(),
-                name: categoryName || `${Date.now()}`,
+                name: categoryName,
                 isActive: true,
                 todoList: [],
             });
@@ -109,8 +109,6 @@ class TodoList {
     }
 
     categorySetActiveAfterRemove(index) {
-        if (!index) return;
-
         let nextCategory = this.categoryList[index + 1];
 
         if (nextCategory) {
