@@ -1,3 +1,7 @@
+.todo-list {
+    padding-bottom: var(--spacing-10);
+}
+
 .todo-list-title {
     display: flex;
     align-items: center;

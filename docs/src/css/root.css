@@ -1,4 +1,5 @@
 :root {
+    --app-min-width: 320px;
     --container-width: 768px;
 
     --spacing-1: 2px;
