@@ -6,6 +6,11 @@
     gap: var(--spacing-4);
 }
 
+.todo-list-title + * {
+    border-top-left-radius: var(--radius-base);
+    border-top-right-radius: var(--radius-base);
+}
+
 .todo-list-title strong {
     font-size: 28px;
     line-height: 28px;
@@ -75,6 +80,8 @@
     padding: var(--spacing-2) var(--spacing-4);
     border: 2px solid var(--color-neutral);
     transition: all 0.3s;
+    border-bottom-left-radius: var(--radius-base);
+    border-bottom-right-radius: var(--radius-base);
 }
 
 .todo-add:hover {
