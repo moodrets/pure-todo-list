@@ -35,7 +35,7 @@ class TodoList {
 
     categoryList = [];
 
-    #dragstartTodoELem = null;
+    #dragstartTodoElem = null;
 
     constructor(selector, options = {}) {
         if (!selector) {
@@ -248,7 +248,7 @@ class TodoList {
     }
 
     todoMoveAfterDrag(fromId, toId) {
-        if (!fromId && toId) return;
+        if (!fromId && !toId) return;
 
         let todoList = this.categoryActive?.todoList;
         let fromTodo = todoList?.find((todo) => todo.id === fromId);
@@ -266,7 +266,7 @@ class TodoList {
     }
 
     todoDragStartListener(event) {
-        this.#dragstartTodoELem = event.target;
+        this.#dragstartTodoElem = event.target;
     }
 
     todoDragOverListener(event) {
@@ -281,8 +281,8 @@ class TodoList {
     todoDropListener(event) {
         event.target.classList.remove('dragover');
 
-        if (this.#dragstartTodoELem) {
-            let todoFromId = this.#dragstartTodoELem.dataset['todoId'];
+        if (this.#dragstartTodoElem) {
+            let todoFromId = this.#dragstartTodoElem.dataset['todoId'];
             let todoToId = event.target.dataset['todoId'];
             this.todoMoveAfterDrag(+todoFromId, +todoToId);
         }
